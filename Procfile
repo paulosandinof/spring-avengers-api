@@ -1,1 +1,1 @@
-web: java -XX:+UseContainerSupport $JAVA_OPTS -Dserver.port=$PORT -Dspring.profiles.active=heroku -jar target/*.jar
+web: java -Dspring.profiles.active=heroku -Dserver.port=$PORT $JAVA_OPTS -jar target/*.jar
